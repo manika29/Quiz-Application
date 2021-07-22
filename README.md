@@ -1,2 +1,1 @@
-Quiz Application
 It is a quiz application built using ReactJS and Context API. It has different questions and a next button to navigate through all the questions. In the end the final score is displayed on the screen. 
