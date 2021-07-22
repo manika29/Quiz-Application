@@ -5,7 +5,7 @@ import { QuizContext } from "../Helpers/Contexts";
 import { Questions } from "../Helpers/QuestionBank";
 
 const EndScreen = () => {
-  const { score, setScore, setGameState, userName } = useContext(QuizContext);
+  const { score, setScore, setGameState } = useContext(QuizContext);
 
   const restartQuiz = () => {
     setScore(0);
@@ -14,7 +14,6 @@ const EndScreen = () => {
   return (
     <div className="EndScreen">
       <h1>Quiz Finished</h1>
-      <h3>{userName}</h3>
       <h1>
         {score} / {Questions.length}
       </h1>
